@@ -66,7 +66,7 @@ function upload(e)
 			{
 				let index = table.node.children.length;
 				let tag = file.name.substring(0, file.name.indexOf(".json"));
-				table.addRow(file.name);
+				table.addRow(tag);
 				
 				let reader = new FileReader();
 				reader.readAsText(file, "UTF-8");
