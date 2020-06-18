@@ -3,24 +3,18 @@
 	<head>
 		<title>JSON Tools</title>
 		<meta charset="utf-8">
-		<script src="script.js"></script>
-		<style type="text/css">
-		html, body
-		{
-			height: 100%;
-			margin: 0;
-			text-align: center;
-		}
-		</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="scripts/scheduler.js" defer></script>
+		<script src="scripts/document.js" defer></script>
+		<script src="scripts/beautify.js" defer></script>
+		<script src="scripts/search.js" defer></script>
 	</head>
 	<body ondrop="upload(event)" ondragover="event.preventDefault()">
-		<!--<table id="t">
-			<tr>
-				<td>test</td>
-			</tr>
-		</table>
-		<script>
-		let t = document.getElementById('t');
-		</script>-->
+		<div id="overlay">
+			<!-- Info per table, load via JS -->
+		</div>
+		<div id="page">
+			<table id="files"><tbody></tbody></table>
+		</div>
 	</body>
 </html>
